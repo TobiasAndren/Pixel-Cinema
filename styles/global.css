@@ -1,11 +1,16 @@
-:root {
+:root{
     --backgroundColor: #000a4d;
-    --headerColor: #0f61e9;
-    --logoColor: #84ff00;
-    --textColor: #000;
+    --textColor: #272827;
+    --logo: #84ff00;
+    --header: #0f61e9;
 }
 
 *{
     box-sizing: border-box;
     margin: 0;
+}
+
+body{
+    background-color: var(--backgroundColor);
+    height: 5000px;
 }
