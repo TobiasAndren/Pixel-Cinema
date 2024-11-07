@@ -1,3 +1,10 @@
+:root {
+    --backgroundColor: #000a4d;
+    --headerColor: #0f61e9;
+    --logoColor: #84ff00;
+    --textColor: #000;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
