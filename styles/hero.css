@@ -1,4 +1,4 @@
-/*----- . -----*/
+/*----- Overall size of hero class -----*/
 .hero {
     display: flex;
     justify-content: center;
@@ -7,7 +7,8 @@
     height: 30rem;
     margin: 1rem 0;
 }
-/*----- . -----*/
+
+/*----- Overall size of hero component -----*/
 .hero-slide {
     position: relative;
     width: 60%;
@@ -15,7 +16,8 @@
     max-height: 30rem;
     overflow: hidden;
 }
-/*----- . -----*/
+
+/*----- Hero images settings and transition between images -----*/
 .hero-slide img {
     position: absolute;
     width: 100%;
@@ -24,11 +26,13 @@
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
-/*----- . -----*/
+
+/*----- Show current hero image over hidden -----*/
 .hero-slide img.active {
     opacity: 1;
 }
-/*----- . -----*/
+
+/*----- Arrows indicating click -----*/
 .arrow {
     position: absolute;
     top: 50%;
@@ -40,6 +44,7 @@
     user-select: none;
     z-index: 10;
 }
+
 /*----- Arrows close to sides -----*/
 .arrow.left {
     left: 0.6rem;
@@ -60,7 +65,7 @@
     z-index: 10;
 }
 
-/*----- Indication circle clickable and low opacity when not showing -----*/
+/*----- Indication circle clickable and low opacity while image is hidden -----*/
 .spanCircle {
     width: 0.9rem;
     height: 0.9rem;

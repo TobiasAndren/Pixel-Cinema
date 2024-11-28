@@ -1,3 +1,4 @@
+/*----- Hero slider -----*/
 document.addEventListener('DOMContentLoaded', () => {
     const carousel = document.querySelector('.hero-slide');
     const slides = carousel.querySelectorAll('.slide');
@@ -28,15 +29,15 @@ document.addEventListener('DOMContentLoaded', () => {
         updateCarousel();
     }
 
-    // Add click event listener to the entire carousel
+    /*----- Click event listener for carousel -----*/
     carousel.addEventListener('click', (event) => {
-        // Get the width of the carousel
+        /*----- Carousel width -----*/
         const carouselWidth = carousel.offsetWidth;
         
-        // Calculate the click position relative to the carousel
+        /*----- Calculate the click position relative to the carousel -----*/
         const clickPosition = event.clientX - carousel.getBoundingClientRect().left;
         
-        // If clicked on left half, move left; if on right half, move right
+        /*----- 50% of image react to click -----*/
         if (clickPosition < carouselWidth / 2) {
             moveSlide(-1);
         } else {
@@ -44,20 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Keep existing arrow and indicator event listeners
-    leftArrow.addEventListener('click', (e) => {
-        e.stopPropagation(); // Prevent carousel click event
-        moveSlide(-1);
-    });
-
-    rightArrow.addEventListener('click', (e) => {
-        e.stopPropagation(); // Prevent carousel click event
-        moveSlide(1);
-    });
-
     indicators.forEach((indicator, index) => {
         indicator.addEventListener('click', (e) => {
-            e.stopPropagation(); // Prevent carousel click event
+            e.stopPropagation();
             currentSlideIndex = index;
             updateCarousel();
         });
