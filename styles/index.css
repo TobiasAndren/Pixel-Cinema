@@ -45,6 +45,7 @@ body {
 
 .coming-soon-text {
     text-align: center;
+    font-family: 'Tiny5';
     width: 100%;
     height: auto;
     background-color: var(--logo);

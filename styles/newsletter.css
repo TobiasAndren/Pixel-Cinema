@@ -1,0 +1,54 @@
+/*----- Sign up -----*/
+
+.newsletter {
+    display: flex;
+    justify-content: center;
+    height: 12rem;
+}
+
+.newsletter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    background-color: transparent;
+    padding: 1.25rem;
+    text-align: left;
+}
+
+/*----- Input field details -----*/
+
+.newsletter-container input[type="email"] {
+  width: 60%;
+  height: 2rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  color: #000;
+}
+
+/*----- Center and margins on "accept" checkbox -----*/
+
+.checkbox-container {
+    display: flex;
+    align-self: center;
+  }
+
+.newsletter-container label {
+    margin-left: 0.6rem;
+}
+
+/*----- Style on link to "privacy policy" -----*/
+
+.checkbox-container a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/*----- Style on button "Sign up" -----*/
+
+.subscribe-button {
+    width: 40%;
+    height: 1.5rem;
+    border-radius: 0.5rem;
+}
