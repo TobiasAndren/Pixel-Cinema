@@ -4,15 +4,14 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 30rem;
-    margin: 1rem 0;
+    margin-top: 2rem;
 }
 
 /*----- Overall size of hero component -----*/
 .hero-slide {
     position: relative;
-    width: 60%;
-    height: 25rem;
+    width: 100%;
+    aspect-ratio: 16 / 9;
     max-height: 30rem;
     overflow: hidden;
 }
@@ -37,7 +36,6 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0,0,0,0.5);
     color: white;
     padding: 0.6rem;
     cursor: pointer;
@@ -47,17 +45,17 @@
 
 /*----- Arrows close to sides -----*/
 .arrow.left {
-    left: 0.6rem;
+    left: 0.1rem;
 }
 
 .arrow.right {
-    right: 0.6rem;
+    right: 0.1rem;
 }
 
 /*----- Indication circles placement -----*/
 .indicators {
     position: absolute;
-    bottom: 1.25rem;
+    bottom: 0.6rem;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -77,4 +75,18 @@
 /*----- Indication circle white while image showing -----*/
 .spanCircle.active {
     background-color: white;
+}
+
+/*----- Media queries for hero -----*/
+
+@media (min-width: 700px) {
+    .hero-slide {
+        width: 75%;
+    }
+}
+
+@media (min-width: 950px) {
+    .hero-slide {
+        width: 60%;
+    }
 }
