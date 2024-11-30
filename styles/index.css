@@ -11,9 +11,10 @@ body {
 
 /*----- Cover images -----*/
 
-.current img, .upcoming-movies img {
+.current img {
     width: 9rem;
     height: auto;
+    transition: 0.5s ease;
 }
 
 /*----- Currently playing -----*/
@@ -32,15 +33,18 @@ body {
     padding: 0;
     margin: 2rem 0;
 }
+    
+.current img:hover {
+    transform: scale(1.1);
+    transition: 1s ease;
+}
 
 /*----- Coming up text -----*/
 
 .coming-soon {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
+    align-items: center;
 }
 
 .coming-soon-text {
@@ -56,9 +60,42 @@ body {
     width: 80%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    align-self: center;
     gap: 0.6rem;
     margin: 1rem 0;
+}
+
+/*----- Pixel hover effect -----*/
+
+.upcoming-movies a {
+    position: relative;
+    display: inline-block;
+    width: 9rem;
+    height: auto;
+}
+
+.upcoming-movies a img {
+    width: 9rem;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+.upcoming-movies a .pixelated {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 9rem;
+    height: auto;
+    opacity: 0;
+    z-index: 1;
+    image-rendering: pixelated;
+    object-fit: cover;
+}
+
+.upcoming-movies a:hover .pixelated {
+    opacity: 1;
+    position: absolute;
 }
 
 /*----- Media queries for movies -----*/
@@ -66,10 +103,6 @@ body {
 @media (min-width: 700px) {
     .current, .upcoming-movies, .coming-soon-text {
         width: 75%;
-    }
-    
-    .upcoming-movies {
-        justify-content: center;
     }
 }
 
