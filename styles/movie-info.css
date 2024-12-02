@@ -1,0 +1,35 @@
+.infoContainer {
+    display: flex;
+    height: 80vh;
+    width: 80vw;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-top: 2rem;
+    gap: 2.5rem;
+}
+
+.movieDescription {
+    flex-direction: column;
+    opacity: 80%;
+    background-color: var(--logo);
+    width: 70%;
+    height: 100%;
+}
+
+.movieInfo {
+    opacity: 80%;
+    background-color: var(--logo);
+    width: 30%;
+    height: 100%;
+}
+
+.movieText {
+    margin: 2rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+h3.movieText {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
