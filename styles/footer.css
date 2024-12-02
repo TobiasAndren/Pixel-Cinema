@@ -4,7 +4,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 3rem 1rem;
     gap: 0.6rem;
     color: #fff;
 }
@@ -55,6 +55,10 @@ details[open] > summary::after {
 .desktop-footer a {
     color: #fff;
     text-decoration: none;
+}
+
+.desktop-footer a:hover {
+    text-decoration: underline;
 }
 
 /*--------------------------------------------------*/
