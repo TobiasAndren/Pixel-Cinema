@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixel</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/selection.css">
@@ -13,27 +14,137 @@
     <link rel="stylesheet" href="styles/hero.css">
     <link rel="stylesheet" href="styles/newsletter.css">
     <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
 </head>
 <body>
     <header>
 
     </header>
     <main>
-        <section aria-label="hero">
-
+        <section aria-label="hero" class="hero">
+            <div class="hero-slide" data-carousel="item1">
+                <img class="slide slide1 active" src="https://images.unsplash.com/photo-1482855549413-2a6c9b1955a7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="slide 1">
+                <img class="slide slide2" src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="slide 2">
+                <img class="slide slide3" src="https://images.unsplash.com/photo-1512149074996-e923ac45be6a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="slide 3">
+                <div class="arrow left" data-direction="-1">&#10094;</div>
+                <div class="arrow right" data-direction="1">&#10095;</div>
+                <div class="indicators">
+                    <span class="spanCircle circle1 active" data-index="0"></span>
+                    <span class="spanCircle circle2" data-index="1"></span>
+                    <span class="spanCircle circle3" data-index="2"></span>
+                </div>
+            </div>
         </section>
-        <section aria-label="currently-playing">
-
+        <section aria-label="currently-playing" class="currently-playing">
+            <div class="current">
+                <a href="#"><img src="assets/warcraft-cover.jpg"></a>
+                <a href="#"><img src="assets/assassins-creed-cover.jpg"></a>
+                <a href="#"><img src="assets/tombraider-cover.jpg"></a>
+                <a href="#"><img src="assets/monster-hunter-cover.jpg"></a>
+                <a href="#"><img src="assets/sonic1-cover.png"></a>
+                <a href="#"><img src="assets/residentevil-cover.png"></a>
+                <a href="#"><img src="assets/uncharted-cover.png"></a>
+                <a href="#"><img src="assets/sonic2-cover.png"></a>
+                <a href="#"><img src="assets/supermariobros-cover.jpg"></a>
+                <a href="#"><img src="assets/borderlands-cover.jpg"></a>
+            </div>
         </section>
-        <section aria-label="coming-soon">
-
+        <section aria-label="coming-soon" class="coming-soon">
+            <p class="coming-soon-text">
+                Kommer snart
+            </p>
+            <section aria-label="upcoming-movies" class="upcoming-movies">
+                <a href="#">
+                    <img src="assets/minecraft-cover.png">
+                    <img src="assets/minecraft-cover-pixelated.png" class="pixelated">
+                </a>
+                <a href="#">
+                    <img src="assets/untildawn-cover.jpg">
+                    <img src="assets/untildawn-cover-pixelated.png" class="pixelated">
+                </a>
+                <a href="#">
+                    <img src="assets/streetfigther-cover.jpg">
+                    <img src="assets/streetfighter-cover-pixelated.png" class="pixelated">
+                </a>
+                <a href="#">
+                    <img src="assets/lethalcompany-cover.jpg">
+                    <img src="assets/lethalcompany-cover-pixelated.png" class="pixelated">
+                </a>
+                <a href="#">
+                    <img src="assets/rdr-cover.jpg">
+                    <img src="assets/rdr-cover-pixelated.png" class="pixelated">
+                </a>
+                <a href="#">
+                    <img src="assets/horizon-cover.jpg">
+                    <img src="assets/horizon-cover-pixelated.png" class="pixelated">
+                </a>
+            </section>
+            </div>
         </section>
-        <section aria-label="newsletter">
-
+        <section aria-label="newsletter" class="newsletter">
+            <div class="newsletter-container">
+                <h3>Sign up</h3>
+                  <p>to our newsletter</p>
+                <input type="email" id="email" placeholder="lara.croft@mail.com">
+                <div class="checkbox-container">
+                    <input type="checkbox" id="accept-policy">
+                    <label for="accept-policy">I accept the <a href="#">privacy policy</a></label>
+                </div>
+                <button class="subscribe-button">Sign up <i class="fa-solid fa-angle-right"></i></button>
+            </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="mobile-footer">
+        <details>
+            <summary>Om oss</summary>
+            <div class="footer-dropdown">
+                <a href="#">Om Pixel</a><br>
+                <a href="#">Jobba hos oss</a><br>
+                <a href="#">Biografer</a><br>
+                <a href="#">Cookies</a>
+              </div>
+        </details>
+        <details>
+            <summary>Kontakta oss</summary>
+            <div class="footer-dropdown">
+                <a href="#">Kontaktuppgifter</a><br>
+                <a href="#">Kundservice</a><br>
+                <a href="#">Integritetspolicy</a><br>
+                <a href="#">Vanliga frågor & svar</a>
+            </div>
+        </details>
+        <details>
+            <summary>Sociala medier</summary>
+            <div class="footer-dropdown">
+                <a href="#">Facebook</a><br>
+                <a href="#">Instagram</a><br>
+                <a href="#">Tiktok</a><br>
+                <a href="#">Twitter</a>
+            </div>
+        </details>
+    </footer>
+    <footer class="desktop-footer">
+        <div>
+            <h6>Om oss</h6>
+                <a href="#">Om Pixel</a><br>
+                <a href="#">Jobba hos oss</a><br>
+                <a href="#">Biografer</a><br>
+                <a href="#">Cookies</a>
+        </div>
+        <div>
+            <h6>Kontakta oss</h6>
+                <a href="#">Facebook</a><br>
+                <a href="#">Instagram</a><br>
+                <a href="#">Tiktok</a><br>
+                <a href="#">Twitter</a>
+        </div>
+        <div>
+            <h6>Sociala medier</h6>
+                <a href="#">Facebook</a><br>
+                <a href="#">Instagram</a><br>
+                <a href="#">Tiktok</a><br>
+                <a href="#">Twitter</a>
+        </div>
     </footer>
 
     <script src="js/global.js"></script>
