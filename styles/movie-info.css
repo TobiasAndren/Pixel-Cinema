@@ -34,26 +34,26 @@
 
 .descriptionText {
     margin: 2rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: white;
 }
 
 h3.descriptionText {
     margin-bottom: 0;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 600;
 }
 
 .infoText {
     margin: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 400;
     color: white;
 }
 
 h4.infoText {
-    font-size: 1.3;
+    font-size: 1.4rem;
     font-weight: 600;
 }
 
@@ -93,6 +93,7 @@ h4.infoText {
         border: none;
         transition: 100ms ease-in-out;
         font-size: 1.1rem;
+        font-family: "jersey 20", sans-serif;
     }
 
     .descriptionButton:hover {
