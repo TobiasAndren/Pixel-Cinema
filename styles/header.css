@@ -1,0 +1,12 @@
+header {
+    display: flex;
+}
+
+header img {
+    max-width: 3rem;
+}
+
+.header-options {
+    display: flex;
+    justify-content: center;
+}
