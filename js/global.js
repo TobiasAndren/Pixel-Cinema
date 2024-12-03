@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
     
     let currentSlideIndex = 0;
     const totalSlides = slides.length;
+    let autoSlideInterval;
+    let isHovering = false;
 
     function updateCarousel() {
         slides.forEach(slide => slide.classList.remove('active'));
@@ -29,6 +31,22 @@ document.addEventListener('DOMContentLoaded', () => {
         updateCarousel();
     }
 
+    function startAutoSlide() {
+    
+        if (autoSlideInterval) {
+            clearInterval(autoSlideInterval);
+        }
+    
+        autoSlideInterval = setInterval(() => {
+            
+            /*----- Do not automatically change slide when hovering -----*/
+            if (!isHovering) {
+                moveSlide(1);
+            }
+        /*----- Millisecond interval -----*/
+        }, 5000); 
+    }
+
     /*----- Click event listener for carousel -----*/
     carousel.addEventListener('click', (event) => {
         /*----- Carousel width -----*/
@@ -43,6 +61,19 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             moveSlide(1);
         }
+        
+        // Reset auto-slide timer when manually clicking
+        startAutoSlide();
+    });
+
+    // Pause auto-sliding when hovering
+    carousel.addEventListener('mouseenter', () => {
+        isHovering = true;
+    });
+
+    // Resume auto-sliding when not hovering
+    carousel.addEventListener('mouseleave', () => {
+        isHovering = false;
     });
 
     indicators.forEach((indicator, index) => {
@@ -50,6 +81,12 @@ document.addEventListener('DOMContentLoaded', () => {
             e.stopPropagation();
             currentSlideIndex = index;
             updateCarousel();
+            
+            // Reset auto-slide timer when clicking indicator
+            startAutoSlide();
         });
     });
+
+    // Start auto-sliding when the page loads
+    startAutoSlide();
 });

@@ -3,7 +3,6 @@
 .newsletter {
     display: flex;
     justify-content: center;
-    height: 12rem;
 }
 
 .newsletter-container {
@@ -11,20 +10,35 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    color: #fff;
     background-color: transparent;
-    padding: 1.25rem;
+    color: #fff;
+    padding: 1rem;
     text-align: left;
+    gap: 0.6rem;
+}
+
+.newsletter h3 {
+  font-size: 3rem;
+}
+
+.newsletter p, .subscribe-button {
+  font-size: 1.5rem;
+}
+
+label {
+  font-size: 1rem;
 }
 
 /*----- Input field details -----*/
 
 .newsletter-container input[type="email"] {
-  width: 60%;
+  width: 100%;
   height: 2rem;
   text-align: center;
-  border-radius: 0.5rem;
-  color: #000;
+  font-size: 1rem;
+  background-color: transparent;
+  color: #fff;
+  border: solid #fff;
 }
 
 /*----- Center and margins on "accept" checkbox -----*/
@@ -48,7 +62,8 @@
 /*----- Style on button "Sign up" -----*/
 
 .subscribe-button {
-    width: 40%;
-    height: 1.5rem;
-    border-radius: 0.5rem;
+    width: 60%;
+    background-color: transparent;
+    color: #fff;
+    border: solid #fff;
 }

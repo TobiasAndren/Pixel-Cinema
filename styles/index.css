@@ -53,7 +53,8 @@ body {
     font-family: 'Tiny5';
     width: 100%;
     height: auto;
-    background-color: var(--logo);
+    background-color: #4e9600;
+    color: #ffffff;
     font-size: 2rem;
 }
 
