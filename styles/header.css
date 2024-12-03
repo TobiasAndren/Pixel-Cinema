@@ -41,3 +41,9 @@ header img {
     padding-left: 0.5rem;
     border-radius: 0%;
 }
+
+@media (max-width: 678px) {
+    header input {
+        display: none;
+    }
+}

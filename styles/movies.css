@@ -55,4 +55,8 @@ body {
     .titleContainer {
         width: 90vw;
     }
+
+    .backToIndex p {
+        display: none;
+    }
 }
