@@ -2,8 +2,8 @@
     display: flex;
     height: 80vh;
     width: 80vw;
-    margin-left: 8rem;
-    margin-right: 8rem;
+    justify-self: center;
+    align-self: center;
     margin-top: 2rem;
 }
 
@@ -11,4 +11,11 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+@media (max-width: 678px) {
+    .imageContainer {
+        height: 50vh;
+        width: 90vw;
+    }
 }
