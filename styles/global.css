@@ -16,5 +16,6 @@
 body{
     font-family: 'Inter';
     background-color: var(--backgroundColor);
+    max-width: 100vw;
     height: 5000px;
 }
