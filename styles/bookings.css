@@ -47,11 +47,12 @@
 }
 
 .timeText {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: white;
 }
 
 .dateText {
+    font-size: 1.3rem;
     color: white;
 }
 

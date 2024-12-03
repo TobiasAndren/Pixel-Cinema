@@ -25,6 +25,32 @@ body {
     font-size: 3rem;
 }
 
+.backToIndex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    transition: 100ms ease-in-out;
+}
+
+.backToIndex p {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.backToIndex:visited {
+    color: var(--backgroundColor);
+}
+
+.backToIndex:hover {
+    transform: scale(1.07);
+}
+
+.backToIndex:hover p{
+    text-decoration: underline;
+}
+
 @media (max-width: 678px) {
     .titleContainer {
         width: 90vw;
