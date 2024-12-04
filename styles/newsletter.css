@@ -40,6 +40,12 @@ label {
   background-color: transparent;
   color: #fff;
   border: solid #fff;
+  font-family: 'jersey 20', sans-serif;
+}
+
+.newsletter-container input::placeholder {
+  color: darkgray;
+  font-family: 'jersey 20', sans-serif;
 }
 
 /*----- Center and margins on "accept" checkbox -----*/
