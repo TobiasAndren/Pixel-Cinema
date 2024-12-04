@@ -1,0 +1,89 @@
+/*----- Sign up -----*/
+
+.newsletter {
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter-container {
+  height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: transparent;
+    color: #fff;
+    padding: 1rem;
+    text-align: left;
+    gap: 0.6rem;
+}
+
+.newsletter h3 {
+  font-size: 3rem;
+}
+
+.newsletter p, .subscribe-button {
+  font-size: 1.5rem;
+}
+
+label {
+  font-size: 1rem;
+}
+
+/*----- Input field details -----*/
+
+.newsletter-container input[type="email"] {
+  width: 100%;
+  height: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  background-color: transparent;
+  color: #fff;
+  border: solid #fff;
+}
+
+/*----- Center and margins on "accept" checkbox -----*/
+
+.checkbox-container {
+    display: flex;
+    align-self: center;
+  }
+
+.newsletter-container label {
+    margin-left: 0.6rem;
+}
+
+/*----- Style on link to "privacy policy" -----*/
+
+.checkbox-container a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/*----- Style on button "Sign up" -----*/
+
+.subscribe-button-container {
+  height: 30%;
+}
+
+.subscribe-button {
+    width: 100%;
+    border-radius: 0%;
+    color: white;
+    background-color: #4e9600;
+    border: none;
+    transition: 100ms ease-in-out;
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: "jersey 20", sans-serif;
+}
+
+.subscribe-button:hover {
+  transform: scale(1.03);
+}
+
+.subscribe-button:active {
+  background-color: darkorange;
+  border: 2px solid white;
+  transform: translateY(0.5px);
+}

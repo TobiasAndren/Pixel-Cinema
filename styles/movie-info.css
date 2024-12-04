@@ -1,0 +1,135 @@
+.infoContainer {
+    display: flex;
+    height: 60vh;
+    width: 80vw;
+    justify-self: center;
+    align-self: center;
+    margin-top: 2rem;
+    gap: 2.5rem;
+}
+
+.movieDescription {
+    flex-direction: column;
+    opacity: 80%;
+    background-color: #4e9600;
+    width: 70%;
+    height: 100%;
+}
+
+.descriptionContainer {
+    height: 79%;
+    overflow: hidden;
+}
+
+.descriptionButton {
+    display: none;
+}
+
+.movieInfo {
+    opacity: 80%;
+    background-color: #4e9600;
+    width: 30%;
+    height: 100%;
+}
+
+.descriptionText {
+    margin: 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+}
+
+h3.descriptionText {
+    margin-bottom: 0;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.infoText {
+    margin: 2rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: white;
+}
+
+h4.infoText {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+@media (max-width: 1100px) {
+    .movieInfo {
+        display: none;
+    }
+
+    .movieDescription {
+        width: 100%;
+    }
+
+    .descriptionText {
+        margin: 1rem;
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+
+    .descriptionButtonContainer {
+        justify-self: center;
+        align-self: center;
+        width: 80%;
+        height: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+    }
+
+    .descriptionButton {
+        display: block;
+        height: 2.5rem;
+        width: 20%;
+        margin-top: 1rem;
+        border-radius: 0%;
+        background-color: #427f00;
+        color: white;
+        border: none;
+        transition: 100ms ease-in-out;
+        font-size: 1.1rem;
+        font-family: "jersey 20", sans-serif;
+    }
+
+    .descriptionButton:hover {
+        transform: scale(1.03);
+    }
+    
+    .descriptionButton:active {
+        border: 2px solid white;
+        background-color: darkorange;
+        transform: translateY(2px);
+    }
+
+    h4.descriptionText {
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
+    .infoContainer {
+        height: 50vh;
+    }
+
+    .infoText {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 678px) {
+    .infoContainer {
+        width: 90vw;
+    }
+
+    .descriptionButton {
+        width: 30%;
+    }
+
+    .descriptionButtonContainer {
+        width: 90vw;
+    }
+}

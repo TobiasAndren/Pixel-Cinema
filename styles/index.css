@@ -9,6 +9,163 @@ body {
     background-color: var(--backgroundColor);
 }
 
+/*----- Cover images -----*/
 
+.current img, .upcoming-movies a img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
 
+/*----- Currently playing -----*/
 
+.currently-playing {
+    display: flex;
+    justify-content: center;
+}
+
+.current, .upcoming-movies {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: 1rem;
+    margin: 2rem auto;
+}
+
+.current img:hover, .upcoming-movies a img:not(.pixelated):hover {
+    transform: scale(1.1);
+}
+
+/*----- Coming up text -----*/
+
+.coming-soon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coming-soon-text {
+    text-align: center;
+    font-family: 'Tiny5';
+    width: 100%;
+    height: auto;
+    background-color: #4e9600;
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+/*----- Pixel hover effect -----*/
+
+.upcoming-movies a {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 2/3;
+}
+
+.upcoming-movies a .pixelated {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    image-rendering: pixelated;
+    object-fit: cover;
+}
+
+.upcoming-movies a:hover .pixelated {
+    opacity: 1;
+}
+
+.upcoming-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.upcomingText {
+    opacity: 0;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    width: 50%;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--logo);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.upcoming-movies a:hover .upcomingText {
+    opacity: 1;
+    z-index: 1;
+}
+
+/*----- Media queries for movies -----*/
+
+@media (max-width: 390px) {
+
+    .upcoming-movies {
+        grid-template-columns: repeat(2, minmax(7rem, 1fr)) !important;
+        
+    }
+}
+
+@media (max-width: 700px) {
+    .current {
+        grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
+        gap: 0.5rem;
+    }
+
+    .upcoming-movies {
+        grid-template-columns: repeat(3, minmax(7rem, 1fr));
+        gap: 0.5rem;
+    }
+}
+
+@media (min-width: 700px) {
+    .current {
+        width: 75%;
+        grid-template-columns: repeat(5, minmax(8rem, 1fr));
+        gap: 1rem;
+        margin: 0 0 1rem 0;
+    }
+    .upcoming-movies {
+        width: 60%;
+        grid-template-columns: repeat(3, minmax(10rem, 1fr));
+        gap: 0.75rem;
+    }
+
+    .coming-soon-text {
+        width: 75%;
+    }
+}
+
+@media (min-width: 950px) {
+    .current {
+        width: 60%;
+    }
+    
+    .upcoming-movies {
+        width: 40%;
+        grid-template-columns: repeat(3, minmax(10rem, 1fr));
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 1025px) {
+
+    .upcoming-movies {
+        width: 40%;
+        grid-template-columns: repeat(3, minmax(12rem, 1fr));
+        gap: 1.5rem;
+    }
+}

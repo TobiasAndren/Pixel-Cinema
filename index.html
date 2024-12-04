@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixel</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/selection.css">
@@ -13,27 +14,164 @@
     <link rel="stylesheet" href="styles/hero.css">
     <link rel="stylesheet" href="styles/newsletter.css">
     <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
 </head>
 <body>
     <header>
-
+        <div class="header">
+            <img src="assets/p-logo.png">
+            <div class="header-options">
+                <a href="#">Cities</a>
+                <a href="#">Movies</a>
+                <input type="text" placeholder="Search..." class="searchInput">
+            </div>
+        </div>
     </header>
     <main>
-        <section aria-label="hero">
-
+        <section aria-label="hero" class="hero">
+            <div class="hero-slide" data-carousel="item1">
+                <img class="slide slide1 active" src="assets/game-night.png" alt="slide 1 Sign up game night">
+                <img class="slide slide2" src="assets/jolt-silhouette.png" alt="slide 2 Offer buy popcorn get free jolt cola">
+                <img class="slide slide3" src="assets/hero-movie.jpg" alt="slide 3 Minecraft movie poster">
+                <div class="arrow left" data-direction="-1">&#10094;</div>
+                <div class="arrow right" data-direction="1">&#10095;</div>
+                <div class="indicators">
+                    <span class="spanCircle circle1 active" data-index="0"></span>
+                    <span class="spanCircle circle2" data-index="1"></span>
+                    <span class="spanCircle circle3" data-index="2"></span>
+                </div>
+            </div>
         </section>
-        <section aria-label="currently-playing">
-
+        <section aria-label="currently-playing" class="currently-playing">
+            <div class="current">
+                <a href="movies/warcraft.html"><img src="assets/warcraft-cover.jpg"></a>
+                <a href="movies/assassins-creed.html"><img src="assets/assassins-creed-cover.jpg"></a>
+                <a href="movies/tomb-raider.html"><img src="assets/tombraider-cover.jpg"></a>
+                <a href="movies/monster-hunter.html"><img src="assets/monster-hunter-cover.jpg"></a>
+                <a href="movies/sonic-the-hedgehog.html"><img src="assets/sonic1-cover.png"></a>
+                <a href="movies/resident-evil.html"><img src="assets/residentevil-cover.png"></a>
+                <a href="movies/uncharted.html"><img src="assets/uncharted-cover.png"></a>
+                <a href="movies/sonic-the-hedgehog-2.html"><img src="assets/sonic2-cover.png"></a>
+                <a href="movies/super-mario.html"><img src="assets/supermariobros-cover.jpg"></a>
+                <a href="movies/borderlands.html"><img src="assets/borderlands-cover.jpg"></a>
+            </div>
         </section>
-        <section aria-label="coming-soon">
-
+        <section aria-label="coming-soon" class="coming-soon">
+            <p class="coming-soon-text">
+                Coming soon
+            </p>
+            <section aria-label="upcoming-movies" class="upcoming-movies">
+                <a href="#">
+                    <div class="upcoming-container">
+                        <img src="assets/minecraft-cover.png">
+                        <img src="assets/minecraft-cover-pixelated.png" class="pixelated">
+                        <div class="upcomingText">Premieres: <br> 4 April <br> 2025</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="upcoming-container">
+                        <img src="assets/untildawn-cover.jpg">
+                        <img src="assets/untildawn-cover-pixelated.png" class="pixelated">
+                        <div class="upcomingText">Premieres: <br> 25 April <br> 2025</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="upcoming-container">
+                        <img src="assets/streetfigther-cover.jpg">
+                        <img src="assets/streetfighter-cover-pixelated.png" class="pixelated">
+                        <div class="upcomingText">Premieres: <br> 19 Feb <br> 2053</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="upcoming-container">
+                        <img src="assets/lethalcompany-cover.jpg">
+                        <img src="assets/lethalcompany-cover-pixelated.png" class="pixelated">
+                        <div class="upcomingText">Premieres: <br> 13 Sep <br> 3742</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="upcoming-container">
+                        <img src="assets/rdr-cover.jpg">
+                        <img src="assets/rdr-cover-pixelated.png" class="pixelated">
+                        <div class="upcomingText">Premieres: <br> 5 Oct <br> 2074</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="upcoming-container">
+                        <img src="assets/horizon-cover.jpg">
+                        <img src="assets/horizon-cover-pixelated.png" class="pixelated">
+                        <div class="upcomingText">Premieres: <br> 30 Nov <br> 3017</div>
+                    </div>
+                </a>
+            </section>
+            </div>
         </section>
-        <section aria-label="newsletter">
-
+        <section aria-label="newsletter" class="newsletter">
+            <div class="newsletter-container">
+                <h3>Sign up</h3>
+                  <p>to our newsletter</p>
+                <input type="email" id="email" placeholder="lara.croft@mail.com">
+                <div class="checkbox-container">
+                    <input type="checkbox" id="accept-policy">
+                    <label for="accept-policy">I accept the <a href="#">privacy policy</a></label>
+                </div>
+                <div class="subscribe-button-container">
+                    <button class="subscribe-button">Sign up <i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="mobile-footer">
+        <details>
+            <summary>About us</summary>
+            <div class="footer-dropdown">
+                <a href="#">About Pixel</a><br>
+                <a href="#">Cinema</a><br>
+                <a href="#">Work application</a><br>
+                <a href="#">Cookies</a>
+              </div>
+        </details>
+        <details>
+            <summary>Contact us</summary>
+            <div class="footer-dropdown">
+                <a href="#">Contact details</a><br>
+                <a href="#">Customer service</a><br>
+                <a href="#">Integrity policy</a><br>
+                <a href="#">Q & A</a>
+            </div>
+        </details>
+        <details>
+            <summary>Social media</summary>
+            <div class="footer-dropdown">
+                <a href="#">Facebook</a><br>
+                <a href="#">Instagram</a><br>
+                <a href="#">Tiktok</a><br>
+                <a href="#">Twitter</a>
+            </div>
+        </details>
+    </footer>
+    <footer class="desktop-footer">
+        <div>
+            <h6>About us</h6>
+                <a href="#">About Pixel</a><br>
+                <a href="#">Cinema</a><br>
+                <a href="#">Work application</a><br>
+                <a href="#">Cookies</a>
+        </div>
+        <div>
+            <h6>Contact us</h6>
+                <a href="#">Contact details</a><br>
+                <a href="#">Customer service</a><br>
+                <a href="#">Integrity policy</a><br>
+                <a href="#">Q & A</a>
+        </div>
+        <div>
+            <h6>Social media</h6>
+                <a href="#">Facebook</a><br>
+                <a href="#">Instagram</a><br>
+                <a href="#">Tiktok</a><br>
+                <a href="#">Twitter</a>
+        </div>
     </footer>
 
     <script src="js/global.js"></script>

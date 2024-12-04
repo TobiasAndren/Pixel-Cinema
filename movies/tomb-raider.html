@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/video.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/movies.css">
+    <link rel="stylesheet" href="../styles/movie-info.css">
+    <link rel="stylesheet" href="../styles/movie-image.css">
+    <link rel="stylesheet" href="../styles/movie-trailer.css">
+    <link rel="stylesheet" href="../styles/bookings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="../styles/header.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href="../index.html" class="backToIndex">
+                <img src="../assets/p-logo.png">
+                <p>Go Back</p>
+            </a>
+            <div class="header-options">
+                <a href="#">Cities</a>
+                <a href="#">Movies</a>
+                <input type="text" placeholder="Search..." class="searchInput">
+            </div>
+        </div>
+    </header>
+    <section aria-label="hero">
+        <div class="imageContainer">
+            <img src="../assets/tomb-raider-scene.jpg" alt="Lara Croft aiming bow" class="movieImage">
+        </div>
+        <div class="titleContainer">
+            <h1 class="title">Tomb Raider</h1>
+        </div>
+    </section>
+    <section aria-label="movie-info">
+        <div class="infoContainer">
+            <div class="movieDescription">
+                <h3 class="descriptionText">Description:</h3>
+                <div class="descriptionContainer">
+                    <p class="descriptionText">Lara Croft is the fiercely independent daughter of eccentric adventurer Lord Richard Croft, who vanished when she was scarcely a teen. Now a young woman of twenty-one without any real focus or purpose, Lara navigates the chaotic streets of trendy East London as a bike courier, barely making the rent, and takes college courses, rarely making it to class. Determined to forge her own path, she refuses to take the reins of her father's global empire just as staunchly as she rejects the idea that he's truly gone.</p>
+                </div>
+            </div>
+            <div class="movieInfo">
+                <h4 class="infoText">Director:</h4>
+                <p class="infoText">Roar Uthaug</p>
+                <h4 class="infoText">Actors:</h4>
+                <p class="infoText">Alicia Vikander, Dominic West, Walton Goggins, Daniel Wu</p>
+                <h4 class="infoText">Run Time:</h4>
+                <p class="infoText">1h 59min</p>
+            </div>
+        </div>
+        <div class="descriptionButtonContainer">
+            <button class="descriptionButton">Show more</button>
+        </div>
+    </section>
+    <section aria-label="trailer">
+        <div class="trailerContainer">
+            <video src="https://imdb-video.media-imdb.com/vi3590174745/1434659607842-pgv4ql-1516295386629.mp4?Expires=1733399672&Signature=RKnulubNakJXol9ykp5q71CRIY5zNQMAD4rDxsGxvPyRWXXcpNOnm-jc0ZP2UQg1L9U69jzW~fryRZu8cpswtem8p2hhHsHih0D43Ij96Cuv-3HZ703XCtAzj6RYUEyYBW~dL0eXw4xwVutatlDRKqHRG3cXruyXIpXrkowyiHf~nIsJVvkxiLihZsf2poCW3x9M4tz0C7Y6XMqvse4gacuMdPudyy~86qU9H0OA5LrASqthonAgxu4UfDgy0slwFjP~B-BPXTOCosTRl7VYOyyJ4MCIHyEBj9RBFIWFslxqDsJZTGyuc4rUSHN3FflLB~hZhaRi4959ro2QCgu6lA__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA" controls class="trailer"></video>
+        </div>
+    </section>
+    <section aria-label="bookings">
+        <div class="bookingsContainer">
+            <div class="bookingDaysContainer">
+                <h3 class="dayText">Monday</h3>
+                <div class="bookings" id="bookings">
+                    <p class="dateText">9 dec</p>
+                    <p class="timeText">16:00</p>
+                </div>
+                <div class="bookings" id="bookings">
+                    <p class="dateText">9 dec</p>
+                    <p class="timeText">20:00</p>
+                </div>
+            </div>
+            <div class="bookingDaysContainer">
+                <h3 class="dayText">Tuesday</h3>
+                <div class="bookings" id="bookings">
+                    <p class="dateText">10 dec</p>
+                    <p class="timeText">16:00</p>
+                </div>
+                <div class="bookings" id="bookings">
+                    <p class="dateText">10 dec</p>
+                    <p class="timeText">20:00</p>
+                </div>
+            </div>
+            <div class="bookingDaysContainer">
+                <h3 class="dayText">Wednesday</h3>
+                <div class="bookings" id="bookings">
+                    <p class="dateText">11 dec</p>
+                    <p class="timeText">16:00</p>
+                </div>
+                <div class="bookings" id="bookings">
+                    <p class="dateText">11 dec</p>  
+                    <p class="timeText">20:00</p>
+                </div>
+            </div>
+            <div class="bookingDaysContainer">
+                <h3 class="dayText">Thursday</h3>
+                <div class="bookings" id="bookings">
+                    <p class="dateText">12 dec</p> 
+                    <p class="timeText">16:00</p>
+                </div>
+                <div class="bookings" id="bookings">
+                    <p class="dateText">12 dec</p>
+                    <p class="timeText">20:00</p>
+                </div>
+            </div>
+            <div class="bookingDaysContainer">
+                <h3 class="dayText">Friday</h3>
+                <div class="bookings" id="bookings">
+                    <p class="dateText">13 dec</p>
+                    <p class="timeText">16:00</p>
+                </div>
+                <div class="bookings" id="bookings">
+                    <p class="dateText">13 dec</p>
+                    <p class="timeText">20:00</p>
+                </div>
+            </div>
+            <div class="bookingDaysContainer">
+                <h3 class="dayText">Saturday</h3>
+                <div class="bookings" id="bookings">
+                    <p class="dateText">14 dec</p>
+                    <p class="timeText">16:00</p>
+                </div>
+                <div class="bookings" id="bookings">
+                    <p class="dateText">14 dec</p>
+                    <p class="timeText">20:00</p>
+                </div>
+            </div>
+            <div class="bookingDaysContainer">
+                <h3 class="dayText">Sunday</h3>
+                <div class="bookings" id="bookings">
+                    <p class="dateText">15 dec</p> 
+                    <p class="timeText">16:00</p>
+                </div>
+                <div class="bookings" id="bookings">
+                    <p class="dateText">15 dec</p>
+                    <p class="timeText">20:00</p>
+                </div>
+            </div>
+        </div>
+        <div class="bookButtonContainer">
+            <button class="bookButton">Book</button>
+        </div>
+    </section>
+    <footer class="mobile-footer">
+        <details>
+            <summary>About us</summary>
+            <div class="footer-dropdown">
+                <a href="#">About Pixel</a><br>
+                <a href="#">Cinema</a><br>
+                <a href="#">Work application</a><br>
+                <a href="#">Cookies</a>
+              </div>
+        </details>
+        <details>
+            <summary>Contact us</summary>
+            <div class="footer-dropdown">
+                <a href="#">Contact details</a><br>
+                <a href="#">Customer service</a><br>
+                <a href="#">Integrity policy</a><br>
+                <a href="#">Q & A</a>
+            </div>
+        </details>
+        <details>
+            <summary>Social media</summary>
+            <div class="footer-dropdown">
+                <a href="#">Facebook</a><br>
+                <a href="#">Instagram</a><br>
+                <a href="#">Tiktok</a><br>
+                <a href="#">Twitter</a>
+            </div>
+        </details>
+    </footer>
+    <footer class="desktop-footer">
+        <div>
+            <h6>About us</h6>
+                <a href="#">About Pixel</a><br>
+                <a href="#">Cinema</a><br>
+                <a href="#">Work application</a><br>
+                <a href="#">Cookies</a>
+        </div>
+        <div>
+            <h6>Contact us</h6>
+                <a href="#">Contact details</a><br>
+                <a href="#">Customer service</a><br>
+                <a href="#">Integrity policy</a><br>
+                <a href="#">Q & A</a>
+        </div>
+        <div>
+            <h6>Social media</h6>
+                <a href="#">Facebook</a><br>
+                <a href="#">Instagram</a><br>
+                <a href="#">Tiktok</a><br>
+                <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="../js/bookings.js"></script>
+</body>
+</html>
