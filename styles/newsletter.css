@@ -43,11 +43,6 @@ label {
   font-family: 'jersey 20', sans-serif;
 }
 
-.newsletter-container input::placeholder {
-  color: darkgray;
-  font-family: 'jersey 20', sans-serif;
-}
-
 /*----- Center and margins on "accept" checkbox -----*/
 
 .checkbox-container {
