@@ -113,7 +113,7 @@
 
 @media (max-width: 678px) {
     .bookingsContainer {
-        height: 160vh;
+        height: 200vh;
         width: 90vw;
         grid-template-columns: repeat(2, 1fr);
     }

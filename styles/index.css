@@ -50,12 +50,12 @@ body {
 
 .coming-soon-text {
     text-align: center;
-    font-family: 'Tiny5';
     width: 100%;
     height: auto;
     background-color: #4e9600;
     color: #ffffff;
     font-size: 2rem;
+    font-weight: 500;
 }
 
 /*----- Pixel hover effect -----*/
