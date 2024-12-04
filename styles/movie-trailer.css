@@ -30,4 +30,8 @@
         width: 90vw;
         margin-top: 2rem;
     }
+
+    .trailer {
+        object-fit: cover;
+    }
 }
